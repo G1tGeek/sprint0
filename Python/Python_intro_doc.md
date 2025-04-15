@@ -37,7 +37,7 @@ Python has now become one of the most widely used languages in various domains s
 
 ---
 
-**## Key Features of Python
+**## Key Features of Python**
 
 ## Key Features of Python
 
