@@ -1,6 +1,6 @@
 
 # requirements.txt Documentation
-![image](https://cdn.hashnode.com/res/hashnode/image/upload/v1637422966499/jx6h36yHp.jpeg)
+![image](https://miro.medium.com/v2/resize:fit:1400/0*_l1tGYAPqw6-Ev1K.png)
 
 | Created     | Version | Author        | Comment            | Reviewer         |
 |-------------|---------|---------------|---------------------|------------------|
