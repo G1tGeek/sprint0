@@ -14,9 +14,11 @@
 2. [Why Use `requirements.txt`](#why-use-requirementstxt)  
 3. [Use Cases](#use-cases)  
 4. [Dependency Versioning Best Practices](#dependency-versioning-best-practices)  
-5. [Conclusion](#conclusion)  
-6. [Contacts](#contacts)  
-7. [References](#references)  
+5. [Syntax of `requirements.txt`](#syntax-of-requirementstxt)
+6. [Difference Between `requirements.txt` and pip](#difference-between-requirementstxt-and-pip)
+7. [Conclusion](#conclusion)  
+8. [Contacts](#contacts)  
+9. [References](#references)  
 
 ---
 
@@ -108,6 +110,31 @@ requests==2.28.1 \
 
 ---
 
+## ✅ Syntax of `requirements.txt`
+
+| **Syntax**                          | **Description**                                                   | **Example**                         |
+|------------------------------------|-------------------------------------------------------------------|-------------------------------------|
+| `package`                          | Installs the latest version of a package                          | `flask`                             |
+| `package==version`                 | Installs the exact version                                        | `requests==2.28.1`                  |
+| `package>=version`                 | Installs the specified version or newer                           | `sqlalchemy>=1.4`                   |
+| `package<=version`                 | Installs the specified version or older                           | `django<=3.2`                       |
+| `package~=version`                 | Compatible release — allows minor updates                         | `pandas~=1.3.0`                     |
+| `-e git+URL#egg=package`           | Installs directly from a Git repo in "editable" mode              | `-e git+https://github.com/...`     |
+| `--index-url <url>`                | Specifies a custom package index                                  | `--index-url https://example.com`  |
+| `--find-links <path_or_url>`       | Finds packages in local/remote locations                          | `--find-links ./packages`          |
+| `# comment`                        | Inline comments for readability                                   | `flask==2.1.3  # Web framework`     |
+| `-r otherfile.txt`                 | Includes another requirements file (like dev-requirements.txt)   | `-r dev-requirements.txt`          |
+
+### 📄 Example requirements.txt
+
+flask==2.1.3 \
+requests==2.28.1 \
+sqlalchemy>=1.4 \
+-e git+https://github.com/example/repo.git#egg=customlib \
+--index-url https://pypi.org/simple \
+--find-links ./local-packages 
+
+---
 ## Conclusion
 
 The `requirements.txt` file is more than just a list of packages—it's a tool that fosters collaboration, reduces bugs, and increases deployment reliability. By following best practices, teams can maintain cleaner, safer, and more efficient Python environments.
