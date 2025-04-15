@@ -52,31 +52,25 @@ The `requirements.txt` file is a standard way in Python projects to define all t
 
 ### 1. Use Exact Version Pinning
 
-Pin packages to exact versions to ensure stability:
+Pin packages to exact versions to ensure stability: \
 
-\`\`\`
-flask==2.1.3
-requests==2.28.1
-sqlalchemy==1.4.46
-\`\`\`
+flask==2.1.3 \
+requests==2.28.1 \
+sqlalchemy==1.4.46 \
 
 ---
 
 ### 2. Avoid Loose Versioning
 
-Avoid using operators like `>=`, `<=`, or leaving versions unspecified. These can cause unexpected results due to breaking changes in newer versions.
+Avoid using operators like `>=`, `<=`, or leaving versions unspecified. These can cause unexpected results due to breaking changes in newer versions. \
 
-**Not Recommended:**
-\`\`\`
-flask
-requests>=2.0
-\`\`\`
+**Not Recommended:** \
+flask \
+requests>=2.0 \
 
-**Recommended:**
-\`\`\`
-flask==2.1.3
-requests==2.28.1
-\`\`\`
+**Recommended:** \
+flask==2.1.3 \
+requests==2.28.1 \
 
 ---
 
@@ -84,25 +78,21 @@ requests==2.28.1
 
 Use comments or separate files like `dev-requirements.txt` to avoid mixing dev tools with production needs.
 
-**Example:**
-\`\`\`
-> Production
-flask==2.1.3
+**Example:** \
+Production \
+flask==2.1.3 \
 
-> Development
-pytest==7.2.1
-black==23.1.0
-\`\`\`
+Development \
+pytest==7.2.1 \
+black==23.1.0 \
 
 ---
 
 ### 4. Use `pip freeze` to Lock All Installed Packages
 
-Once your virtual environment is ready and all dependencies are installed:
+Once your virtual environment is ready and all dependencies are installed: \
 
-\`\`\`
-pip freeze > requirements.txt
-\`\`\`
+pip freeze > requirements.txt \
 
 This captures **all direct and transitive dependencies**.
 
@@ -110,13 +100,11 @@ This captures **all direct and transitive dependencies**.
 
 ### 5. Consider Using Hashes for Security
 
-Add hashes to ensure package integrity (typically used with tools like `pip-tools`):
+Add hashes to ensure package integrity (typically used with tools like `pip-tools`): \
 
-\`\`\`
 requests==2.28.1 \
-    --hash=sha256:aaa... \
-    --hash=sha256:bbb...
-\`\`\`
+--hash=sha256:aaa... \
+--hash=sha256:bbb...
 
 ---
 
