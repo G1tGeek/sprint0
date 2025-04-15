@@ -56,7 +56,7 @@ Pin packages to exact versions to ensure stability: \
 
 flask==2.1.3 \
 requests==2.28.1 \
-sqlalchemy==1.4.46 \
+sqlalchemy==1.4.46 
 
 ---
 
@@ -66,11 +66,11 @@ Avoid using operators like `>=`, `<=`, or leaving versions unspecified. These ca
 
 **Not Recommended:** \
 flask \
-requests>=2.0 \
+requests>=2.0 
 
 **Recommended:** \
 flask==2.1.3 \
-requests==2.28.1 \
+requests==2.28.1 
 
 ---
 
@@ -80,11 +80,11 @@ Use comments or separate files like `dev-requirements.txt` to avoid mixing dev t
 
 **Example:** \
 Production \
-flask==2.1.3 \
+flask==2.1.3 
 
 Development \
 pytest==7.2.1 \
-black==23.1.0 \
+black==23.1.0 
 
 ---
 
