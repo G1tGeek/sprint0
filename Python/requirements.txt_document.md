@@ -124,9 +124,6 @@ requests==2.28.1 \
 
 The `requirements.txt` file is more than just a list of packages—it's a tool that fosters collaboration, reduces bugs, and increases deployment reliability. By following best practices, teams can maintain cleaner, safer, and more efficient Python environments.
 
-> “In modern Python development, `requirements.txt` is more than just a list—it’s a contract ensuring consistency across teams and systems.”  
-> – *Yuvraj Singh*
-
 ---
 
 ## Contacts
