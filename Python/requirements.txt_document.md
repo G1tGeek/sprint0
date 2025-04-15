@@ -52,7 +52,7 @@ The `requirements.txt` file is a standard way in Python projects to define all t
 
 ### 1. Use Exact Version Pinning
 
-Pin packages to exact versions to ensure stability: \
+Pin packages to exact versions to ensure stability: 
 
 flask==2.1.3 \
 requests==2.28.1 \
@@ -62,7 +62,7 @@ sqlalchemy==1.4.46
 
 ### 2. Avoid Loose Versioning
 
-Avoid using operators like `>=`, `<=`, or leaving versions unspecified. These can cause unexpected results due to breaking changes in newer versions. \
+Avoid using operators like `>=`, `<=`, or leaving versions unspecified. These can cause unexpected results due to breaking changes in newer versions. 
 
 **Not Recommended:** \
 flask \
