@@ -14,7 +14,7 @@
 2. [Why Use `requirements.txt`](#why-use-requirementstxt)  
 3. [Use Cases](#use-cases)  
 4. [Dependency Versioning Best Practices](#dependency-versioning-best-practices)  
-5. [Syntax of `requirements.txt`](#syntax-of-requirements.txt)
+5. [Syntax of `requirements.txt`](#syntax-of-requirementstxt)
 6. [Difference Between `requirements.txt` and pip](#difference-between-requirementstxt-and-pip)
 7. [Conclusion](#conclusion)  
 8. [Contacts](#contacts)  
