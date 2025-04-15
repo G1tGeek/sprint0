@@ -1,5 +1,5 @@
 # Introduction to Python
-
+![image](https://cdn.hashnode.com/res/hashnode/image/upload/v1637422966499/jx6h36yHp.jpeg)
 | Created     | Version | Author        | Comment | Reviewer         |
 |-------------|---------|---------------|---------|------------------|
 | 14-04-2025  | V1      | Yuvraj Singh  |         | Siddharth Pawar  |
