@@ -54,7 +54,7 @@ The `requirements.txt` file is a standard way in Python projects to define all t
 
 Pin packages to exact versions to ensure stability:
 
-\`\`\`txt
+\`\`\`
 flask==2.1.3
 requests==2.28.1
 sqlalchemy==1.4.46
@@ -86,10 +86,10 @@ Use comments or separate files like `dev-requirements.txt` to avoid mixing dev t
 
 **Example:**
 \`\`\`
-Production
+> Production
 flask==2.1.3
 
-Development
+> Development
 pytest==7.2.1
 black==23.1.0
 \`\`\`
