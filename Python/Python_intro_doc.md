@@ -1,5 +1,6 @@
 # Introduction to Python
 ![image](https://cdn.hashnode.com/res/hashnode/image/upload/v1637422966499/jx6h36yHp.jpeg)
+
 | Created     | Version | Author        | Comment | Reviewer         |
 |-------------|---------|---------------|---------|------------------|
 | 14-04-2025  | V1      | Yuvraj Singh  |         | Siddharth Pawar  |
@@ -10,17 +11,11 @@
 
 1. [History of Python](#history-of-python)  
 2. [Key Features of Python](#key-features-of-python)  
-3. [Common Use Cases of Python](#common-use-cases-of-python)  
-    - [Data Science & Machine Learning](#data-science--machine-learning)  
-    - [Web Development](#web-development)  
-    - [Automation & Scripting](#automation--scripting)  
-    - [Testing](#testing)  
-    - [Desktop GUI Applications](#desktop-gui-applications)  
-    - [Game Development](#game-development)  
-    - [Networking & APIs](#networking--apis)  
-4. [Conclusion](#conclusion)  
-5. [Contacts](#contacts)  
-6. [References](#references)  
+3. [Python Architecture](#python-architecture)  
+4. [Common Use Cases of Python](#common-use-cases-of-python)  
+5. [Conclusion](#conclusion)  
+6. [Contacts](#contacts)  
+7. [References](#references)  
 
 ---
 
@@ -32,8 +27,6 @@ Python is a high-level, interpreted programming language developed with an empha
 - **First Version**: Python 0.9.0 (included classes, exceptions, functions, and core data types)  
 - **Current Series**: Python 3.x (includes many modern improvements, and is not backward-compatible with Python 2.x)  
 - **Name Origin**: The name "Python" is inspired by *Monty Python’s Flying Circus*, a British sketch comedy series—not the snake.
-
-Python has now become one of the most widely used languages in various domains such as education, data science, automation, and web development.
 
 ---
 
@@ -52,12 +45,25 @@ Python has now become one of the most widely used languages in various domains s
 | **Rapid Development**                | Accelerates time-to-market                                                 | Ideal for startups and quick MVPs—Python helps developers build and iterate on ideas fast.                                                      |
 | **Large Community & Ecosystem**      | Access to vast resources and support                                       | With millions of users and contributors, it's easy to find libraries, documentation, tutorials, and forums for help.                           |
 
+---
+
+## Python Architecture
+
+Python's architecture is built around several core components that interact to execute Python programs effectively:
+
+| **Component**               | **Role**                                                                 |
+|-----------------------------|--------------------------------------------------------------------------|
+| **Python Source Code**      | The `.py` files written by the developer                                |
+| **Parser**                  | Checks syntax and converts the source code into bytecode                |
+| **Interpreter (CPython)**   | The default interpreter that runs the bytecode                          |
+| **Bytecode**                | Intermediate, platform-independent representation of source code        |
+| **PVM (Python Virtual Machine)** | Executes the bytecode one instruction at a time, managing memory and processes |
+| **Memory Manager**          | Handles memory allocation, garbage collection, and caching              |
+| **Libraries & Modules**     | Predefined and third-party packages that enhance Python’s functionality |
 
 ---
 
 ## Common Use Cases of Python
-
-Python is a versatile language used in a wide range of applications. Below is a table showcasing popular domains and how Python is used in each:
 
 | **Domain**                 | **Purpose**                                  | **Popular Libraries/Tools**                                 |
 |----------------------------|----------------------------------------------|--------------------------------------------------------------|
@@ -95,4 +101,3 @@ Python has become a critical tool across industries due to its simplicity, power
 | Official Python Website          | [Visit](https://www.python.org)                                              |
 | Python History and Features      | [Visit](https://medium.com/thetechieguys/python-language-history-features-and-applications-9b77111f9f68) |
 | Real Life Use-Cases              | [Visit](https://www.datacamp.com/blog/what-is-python-used-for) |
-
