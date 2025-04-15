@@ -56,4 +56,15 @@ Python was developed as a successor to the ABC programming language with a focus
 
 Python’s simplicity, flexibility, and power make it an ideal choice for beginners and professionals alike. Its ability to scale from simple scripts to complex machine learning models is what sets it apart in today’s tech landscape.
 
-> “Python is powerful... and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open.” — The Zen of Python
+## Contacts
+
+| Name| Email Address      |
+|-----|--------------------------|
+| Yuvraj Singh | yuvraj.singh.snaatak@mygurukulam.co |
+
+## References
+
+| **Title**            | **Link**                                                                                  |
+|-----------------------|------------------------------------------------------------------------------------------|
+|     | [Link]()          |
+|    | [Link]() | 
