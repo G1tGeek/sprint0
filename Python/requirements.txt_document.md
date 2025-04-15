@@ -90,9 +90,9 @@ black==23.1.0
 
 ### 4. Use `pip freeze` to Lock All Installed Packages
 
-Once your virtual environment is ready and all dependencies are installed: \
+Once your virtual environment is ready and all dependencies are installed: 
 
-pip freeze > requirements.txt \
+pip freeze > requirements.txt 
 
 This captures **all direct and transitive dependencies**.
 
@@ -100,7 +100,7 @@ This captures **all direct and transitive dependencies**.
 
 ### 5. Consider Using Hashes for Security
 
-Add hashes to ensure package integrity (typically used with tools like `pip-tools`): \
+Add hashes to ensure package integrity (typically used with tools like `pip-tools`): 
 
 requests==2.28.1 \
 --hash=sha256:aaa... \
