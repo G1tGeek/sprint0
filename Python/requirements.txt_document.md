@@ -67,13 +67,13 @@ sqlalchemy==1.4.46
 Avoid using operators like `>=`, `<=`, or leaving versions unspecified. These can cause unexpected results due to breaking changes in newer versions.
 
 **Not Recommended:**
-\`\`\`txt
+\`\`\`
 flask
 requests>=2.0
 \`\`\`
 
 **Recommended:**
-\`\`\`txt
+\`\`\`
 flask==2.1.3
 requests==2.28.1
 \`\`\`
@@ -85,7 +85,7 @@ requests==2.28.1
 Use comments or separate files like `dev-requirements.txt` to avoid mixing dev tools with production needs.
 
 **Example:**
-\`\`\`txt
+\`\`\`
 Production
 flask==2.1.3
 
@@ -100,7 +100,7 @@ black==23.1.0
 
 Once your virtual environment is ready and all dependencies are installed:
 
-\`\`\`bash
+\`\`\`
 pip freeze > requirements.txt
 \`\`\`
 
@@ -112,7 +112,7 @@ This captures **all direct and transitive dependencies**.
 
 Add hashes to ensure package integrity (typically used with tools like `pip-tools`):
 
-\`\`\`txt
+\`\`\`
 requests==2.28.1 \
     --hash=sha256:aaa... \
     --hash=sha256:bbb...
