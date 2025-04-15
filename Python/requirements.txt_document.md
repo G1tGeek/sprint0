@@ -86,10 +86,10 @@ Use comments or separate files like `dev-requirements.txt` to avoid mixing dev t
 
 **Example:**
 \`\`\`txt
-# Production
+Production
 flask==2.1.3
 
-# Development
+Development
 pytest==7.2.1
 black==23.1.0
 \`\`\`
