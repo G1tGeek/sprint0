@@ -126,6 +126,6 @@ The `requirements.txt` file is more than just a list of packages—it's a tool t
 
 | **Title**                               | **Link**                                                                 |
 |------------------------------------------|-------------------------------------------------------------------------|
-| Official pip Documentation               | [Visit](https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format) |
-| Real Python - Requirements File          | [Visit](https://realpython.com/what-is-requirements.txt/)              |
+| Official pip Documentation               | [Visit](https://pip.pypa.io/en/stable/reference/requirements-file-format/) |
+| Free Code Camp How-To Guide    | [Visit](https://www.freecodecamp.org/news/python-requirementstxt-explained/)              |
 | Best Practices for Dependency Management | [Visit](https://docs.python-guide.org/dev/virtualenvs/#requirements-files) |
