@@ -125,7 +125,7 @@ requests==2.28.1 \
 | `# comment`                        | Inline comments for readability                                   | `flask==2.1.3  # Web framework`     |
 | `-r otherfile.txt`                 | Includes another requirements file (like dev-requirements.txt)   | `-r dev-requirements.txt`          |
 
-### 📄 Example requirements.txt
+### Example requirements.txt
 
 flask==2.1.3 \
 requests==2.28.1 \
@@ -135,6 +135,21 @@ sqlalchemy>=1.4 \
 --find-links ./local-packages 
 
 ---
+
+## Difference Between `requirements.txt` and pip
+
+| **Aspect**               | **`requirements.txt`**                                             | **`pip` Command**                                            |
+|--------------------------|---------------------------------------------------------------------|--------------------------------------------------------------|
+| **Purpose**              | Stores a list of dependencies for reuse and sharing                | Installs packages one-by-one or from a requirements file     |
+| **Format**               | Plain text file listing packages and versions                     | Command-line tool for Python package installation            |
+| **Usage**                | Used with `pip install -r requirements.txt`                       | Used as `pip install <package>`                             |
+| **Reproducibility**      | Promotes consistent environments across systems                    | Manual installs may vary over time                           |
+| **Version Control**      | Can be committed to version control for collaboration              | Pip commands are transient (used interactively)              |
+| **Dependency Tracking**  | Can include pinned versions, hashes, and comments                  | Tracks only what’s installed at that moment                  |
+| **Automation**           | Easily integrates with CI/CD tools for automation                  | Less structured for automation                              |
+
+---
+
 ## Conclusion
 
 The `requirements.txt` file is more than just a list of packages—it's a tool that fosters collaboration, reduces bugs, and increases deployment reliability. By following best practices, teams can maintain cleaner, safer, and more efficient Python environments.
