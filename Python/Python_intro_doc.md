@@ -130,7 +130,7 @@ Python has become a critical tool across industries due to its simplicity, power
 
 | **Title**                        | **Link**                                                                                      |
 |----------------------------------|-----------------------------------------------------------------------------------------------|
-| Official Python Website          | [https://www.python.org](https://www.python.org)                                              |
-| Python History and Features      | [https://medium.com/thetechieguys/python-language-history-features-and-applications-9b77111f9f68](https://medium.com/thetechieguys/python-language-history-features-and-applications-9b77111f9f68) |
-| Real Life Use-Cases              | [https://www.datacamp.com/blog/what-is-python-used-for](https://www.datacamp.com/blog/what-is-python-used-for) |
+| Official Python Website          | [Visit](https://www.python.org)                                              |
+| Python History and Features      | [Visit](https://medium.com/thetechieguys/python-language-history-features-and-applications-9b77111f9f68) |
+| Real Life Use-Cases              | [Visit](https://www.datacamp.com/blog/what-is-python-used-for) |
 
