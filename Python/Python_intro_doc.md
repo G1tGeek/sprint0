@@ -37,8 +37,6 @@ Python has now become one of the most widely used languages in various domains s
 
 ---
 
-**## Key Features of Python**
-
 ## Key Features of Python
 
 | **Feature**                          | **Benefit**                                                                 | **Explanation**                                                                                                                                  |
@@ -59,58 +57,17 @@ Python has now become one of the most widely used languages in various domains s
 
 ## Common Use Cases of Python
 
-Python is a versatile language used in a wide range of applications. Below are some popular domains and how Python is used in each:
+Python is a versatile language used in a wide range of applications. Below is a table showcasing popular domains and how Python is used in each:
 
-### Data Science & Machine Learning
-
-Python is the go-to language for data analysts and scientists due to its powerful libraries:
-
-- `pandas`, `numpy` – Data manipulation  
-- `matplotlib`, `seaborn` – Data visualization  
-- `scikit-learn`, `tensorflow`, `keras` – Machine learning and deep learning  
-
-### Web Development
-
-Python can be used to build robust and scalable web applications:
-
-- `Django` – A high-level web framework for clean and rapid development  
-- `Flask` – A micro-framework for lightweight apps  
-- `FastAPI` – Modern, fast APIs with automatic validation and documentation  
-
-### Automation & Scripting
-
-Python excels at automating repetitive tasks:
-
-- Writing cron jobs  
-- Automating email reports  
-- Web scraping using `BeautifulSoup`, `Selenium`  
-
-### Testing
-
-Python is used extensively in software testing:
-
-- `unittest` – Built-in testing framework  
-- `pytest` – Advanced and flexible testing library  
-
-### Desktop GUI Applications
-
-Create cross-platform desktop applications:
-
-- `Tkinter` – Built-in GUI library  
-- `PyQt`, `Kivy` – Advanced GUI libraries  
-
-### Game Development
-
-While not common for AAA games, Python is used in game prototypes and education:
-
-- `pygame` – Popular library for 2D games  
-
-### Networking & APIs
-
-Python supports building and consuming REST APIs:
-
-- `requests`, `http.client` – HTTP communication  
-- `socket`, `asyncio` – Networking and asynchronous I/O  
+| **Domain**                 | **Purpose**                                  | **Popular Libraries/Tools**                                 |
+|----------------------------|----------------------------------------------|--------------------------------------------------------------|
+| **Data Science & Machine Learning** | Data analysis, ML, AI                        | `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `tensorflow`, `keras` |
+| **Web Development**        | Build web apps and APIs                      | `Django`, `Flask`, `FastAPI`                                 |
+| **Automation & Scripting** | Automate repetitive tasks and scripts        | `BeautifulSoup`, `Selenium`, cron jobs, email automation     |
+| **Testing**                | Software testing and QA                      | `unittest`, `pytest`                                         |
+| **Desktop GUI Applications** | Create cross-platform desktop apps        | `Tkinter`, `PyQt`, `Kivy`                                    |
+| **Game Development**       | 2D game development, prototyping             | `pygame`                                                     |
+| **Networking & APIs**      | HTTP communication, sockets, async I/O       | `requests`, `http.client`, `socket`, `asyncio`               |
 
 ---
 
