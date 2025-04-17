@@ -1,21 +1,30 @@
-# Introduction to Python
-![image](https://cdn.hashnode.com/res/hashnode/image/upload/v1637422966499/jx6h36yHp.jpeg)
 
+# Introduction to Python
+![image](https://outshinelabs.com/wp-content/uploads/2023/03/python_language_outshinelabs.png)
+
+## **Author**
 | Created     | Version | Author        | Comment | Reviewer         |
 |-------------|---------|---------------|---------|------------------|
 | 14-04-2025  | V1      | Yuvraj Singh  |    Internal Review     | Siddharth Pawar  |
+| 17-04-2025  | V1.1     | Yuvraj Singh  |    Internal Review     | Siddharth Pawar  |
 
 ---
 
 ## **Table of Contents**
 
-1. [History of Python](#history-of-python)  
-2. [Key Features of Python](#key-features-of-python)  
-3. [Python Architecture](#python-architecture)  
-4. [Common Use Cases of Python](#common-use-cases-of-python)  
-5. [Conclusion](#conclusion)  
-6. [Contacts](#contacts)  
-7. [References](#references)  
+1. [Introduction](#introduction)
+2. [History of Python](#history-of-python)  
+3. [Key Features of Python](#key-features-of-python)  
+4. [Python Architecture](#python-architecture)  
+5. [Common Use Cases of Python](#common-use-cases-of-python)  
+6. [Conclusion](#conclusion)  
+7. [Contacts](#contacts)  
+8. [References](#references)  
+
+---
+
+## **Introduction**
+This guide offers a quick overview of Python, including its history, key features, architecture, and common use cases, helping readers understand why Python remains a top choice in modern software development.
 
 ---
 
@@ -83,8 +92,6 @@ Python's architecture is built around several core components that interact to e
 
 Python has become a critical tool across industries due to its simplicity, power, and versatility. Whether you're building a personal automation script or a full-scale AI model, Python offers the tools and ecosystem to make development faster and easier.
 
-> “With its numerous use cases in big tech companies such as Google, Facebook, Amazon, and others, as well as in scientific computing, data analysis, web development, and more, **Python is sure to remain a top language of choice for developers.**"  
-> – *Shruti Mandaokar*
 
 ---
 
