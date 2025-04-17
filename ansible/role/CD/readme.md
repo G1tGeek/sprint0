@@ -100,6 +100,6 @@ Implementing Continuous Delivery for Ansible roles ensures that infrastructure c
 | **Title**                        | **Link**                                                                                      |
 |----------------------------------|-----------------------------------------------------------------------------------------------|
 | Ansible Galaxy Docs              | [Visit](https://galaxy.ansible.com/docs/)                                                    |
-| Molecule for Ansible Testing     | [Visit](https://molecule.readthedocs.io/en/latest/)                                          |
+| Molecule for Ansible Testing     | [Visit](https://www.jeffgeerling.com/blog/2018/testing-your-ansible-roles-molecule)                                          |
 | Ansible Lint                     | [Visit](https://ansible-lint.readthedocs.io/en/latest/)                                      |
 | GitHub Actions for Ansible       | [Visit](https://docs.github.com/en/actions)                                                  |
