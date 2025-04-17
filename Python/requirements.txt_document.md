@@ -1,10 +1,11 @@
+# requirements.txt  Documentation
+![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSyVrRrhYDmUdt6QBsDkve4SneCW2cFnKk17Rf4HZ10_U2Z1XgfpBopH2OmXj1qjfo9g&usqp=CAU)
 
-# requirements.txt Documentation
-![image](https://miro.medium.com/v2/resize:fit:1400/0*_l1tGYAPqw6-Ev1K.png)
-
+## **Author**
 | Created     | Version | Author        | Comment            | Reviewer         |
 |-------------|---------|---------------|---------------------|------------------|
-| 14-04-2025  | V1      | Yuvraj Singh  | Internal Review     | Siddharth Pawar  |
+| 15-04-2025  | V1      | Yuvraj Singh  | Internal Review     | Siddharth Pawar  |
+| 17-04-2025  | V1.1      | Yuvraj Singh  | Internal Review     | Siddharth Pawar  |
 
 ---
 
@@ -54,59 +55,95 @@ The `requirements.txt` file is a standard way in Python projects to define all t
 
 ### 1. Use Exact Version Pinning
 
-Pin packages to exact versions to ensure stability: 
-
+Pin dependencies to **exact versions** to avoid unexpected changes when installing packages across different environments or machines. This ensures that your application always uses the same, tested version of a package.
+``` bash
 flask==2.1.3 \
 requests==2.28.1 \
 sqlalchemy==1.4.46 
+```
+> Why?
+- Prevents bugs caused by newer, untested versions.
+- Helps maintain consistent environments across dev, test, and prod.
+
 
 ---
 
 ### 2. Avoid Loose Versioning
 
-Avoid using operators like `>=`, `<=`, or leaving versions unspecified. These can cause unexpected results due to breaking changes in newer versions. 
+Avoid using version specifiers like >=, <=, or leaving versions blank. Loose versioning can introduce breaking changes when packages update in the background.
 
 **Not Recommended:** \
+```bash
 flask \
 requests>=2.0 
-
+```
 **Recommended:** \
+```bash
 flask==2.1.3 \
 requests==2.28.1 
+```
+> Risks of Loose Versioning:
+- Unintended upgrades.
+- Incompatibility with your codebase.
+- Hidden bugs introduced by third-party changes.
 
 ---
 
 ### 3. Separate Production and Development Dependencies
 
-Use comments or separate files like `dev-requirements.txt` to avoid mixing dev tools with production needs.
+Keep production dependencies clean by separating development-only tools like testing frameworks and linters. This can be done using comments in the same file or separate files like dev-requirements.txt.
 
 **Example:** \
+```bash
 Production \
 flask==2.1.3 
-
+```
+``` bash
 Development \
 pytest==7.2.1 \
 black==23.1.0 
+```
+
+Example using separate files:
+
+requirements.txt → Production
+
+dev-requirements.txt → Development (includes linters, formatters, test tools)
+
+> Why?
+- Reduces attack surface in production.
+- Keeps Docker images and deployment environments minimal and secure.
 
 ---
 
 ### 4. Use `pip freeze` to Lock All Installed Packages
 
-Once your virtual environment is ready and all dependencies are installed: 
-
+After setting up your virtual environment and installing required packages, use the following command to lock the current state:
+```bash
 pip freeze > requirements.txt 
+```
+> This includes:
+- Direct dependencies (your specified packages)
+- Transitive dependencies (their dependencies)
 
-This captures **all direct and transitive dependencies**.
+> Benefits:
+- Full reproducibility of environments.
+- Useful when sharing the project or deploying.
 
 ---
 
 ### 5. Consider Using Hashes for Security
 
-Add hashes to ensure package integrity (typically used with tools like `pip-tools`): 
-
+To ensure package integrity and prevent tampering, add hashes to your dependencies using tools like pip-tools.
+```bash
 requests==2.28.1 \
 --hash=sha256:aaa... \
 --hash=sha256:bbb...
+```
+> Why hashes matter:
+- Prevents installation of compromised or altered packages.
+- Adds another layer of security in CI/CD pipelines and production.
+
 
 ---
 
