@@ -1,29 +1,34 @@
 
 
-
 # **Version Control System (VCS) Documentation**
 
 ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ALqmemof0Xvnk77tm5zVQA.png)
 ---
-
+## **Author**
 | Created     | Version | Author        | Comment           | Reviewer         |
 |-------------|---------|---------------|-------------------|------------------|
 | 16-04-2025  | V1      | Yuvraj Singh  | Internal Review   | Siddharth Pawar  |
-
+| 17-04-2025  | V1.1      | Yuvraj Singh  | Internal Review   | Siddharth Pawar  |
 ---
 
 ## **Table of Contents**
 
-1. [What is Version Control System (VCS)?](#what-is-version-control-system-vcs)  
-2. [Why Use VCS?](#why-use-vcs)  
-3. [Types of VCS](#types-of-vcs)  
-4. [Advantages of VCS](#advantages-of-vcs)  
-5. [Disadvantages of VCS](#disadvantages-of-vcs)  
-6. [VCS Workflow](#vcs-workflow)  
-7. [Best Practices](#best-practices)  
-8. [Conclusion](#conclusion)  
-9. [Contacts](#contacts)  
-10. [References](#references)  
+1. [Introduction](#introduction)
+2. [What is Version Control System (VCS)?](#what-is-version-control-system-vcs)  
+3. [Why Use VCS?](#why-use-vcs)  
+4. [Types of VCS](#types-of-vcs)  
+5. [Advantages of VCS](#advantages-of-vcs)  
+6. [Disadvantages of VCS](#disadvantages-of-vcs)  
+7. [VCS Workflow](#vcs-workflow)  
+8. [Best Practices](#best-practices)  
+9. [Conclusion](#conclusion)   
+10. [Contacts](#contacts)
+11. [References](#references)
+
+---
+
+## **Introduction**
+This guide provides essential concepts and workflows of Version Control Systems (VCS), covering types, advantages, workflows, and best practices to help teams manage code efficiently and collaborate effectively.
 
 ---
 
@@ -129,6 +134,7 @@ Version Control Systems provide a reliable, secure, and efficient way to manage 
 
 A Version Control System (VCS) is indispensable for modern software development. Whether you're a solo developer or working on a large team, a VCS ensures stability, collaboration, and traceability in your projects. Git, being the most popular distributed VCS, is especially suited for agile and DevOps practices. Mastering VCS tools and workflows is essential for efficient, scalable, and secure development.
 
+
 ---
 
 ## Contacts
@@ -146,4 +152,4 @@ A Version Control System (VCS) is indispensable for modern software development.
 | Atlassian Git Guide              | [Visit](https://www.atlassian.com/git/tutorials/what-is-version-control)                     |
 | Git Documentation                | [Visit](https://git-scm.com/doc)                                                             |
 | VCS Types Overview               | [Visit](https://www.geeksforgeeks.org/version-control-systems/)                             |
-| Git Best Practices               | [Visit](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/)                              |
+| Git Best Practices               | [Visit](https://www.freecodecamp.org/news/how-to-use-git-best-practices-for-beginners/)      |
