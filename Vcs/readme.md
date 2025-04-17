@@ -36,7 +36,6 @@ This guide provides essential concepts and workflows of Version Control Systems 
 
 A **Version Control System (VCS)** is a tool that helps software teams manage changes to source code over time. It keeps track of every modification, who made it, and why. Developers can collaborate without overwriting each other’s work, and roll back to earlier versions if needed.
 
->  **Key Characteristics**  
 > - Maintains historical versions of files.  
 > - Allows collaboration across multiple developers.  
 > - Enables branching and merging.  
@@ -49,7 +48,6 @@ A **Version Control System (VCS)** is a tool that helps software teams manage ch
 
 Version Control Systems provide a reliable, secure, and efficient way to manage project changes.
 
->  **Why Use VCS?**  
 > - Collaboration: Work with team members without conflict.  
 > - History: Track and review every change made.  
 > - Backup & Recovery: Prevent data loss.  
@@ -98,6 +96,9 @@ Version Control Systems provide a reliable, secure, and efficient way to manage 
 ---
 
 ## **VCS Workflow**
+
+![image](https://github.com/user-attachments/assets/f3b724f0-29bb-43da-80b1-7077b496aaff)
+
 
 | **Step**           | **Action**                                                                      |
 |--------------------|----------------------------------------------------------------------------------|
