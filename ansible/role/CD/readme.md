@@ -7,7 +7,7 @@
 
 | Created     | Version | Author        | Comment           | Reviewer         |
 |-------------|---------|---------------|-------------------|------------------|
-| 16-04-2025  | V1      | Yuvraj Singh  | Initial Draft     | Siddharth Pawar  |
+| 16-04-2025  | V1      | Yuvraj Singh  | Internal Review   | Siddharth Pawar  |
 
 ---
 
