@@ -16,8 +16,8 @@
 4. [jq Filters Overview](#jq-Filters-Overview)  
 5. [Installation Guide](#Installation-Guide)  
    - [Check for Existing Installation](#Check-for-Existing-Installation)  
-   - [Ubuntu/Debian](#Ubuntu/Debian)  
-   - [RedHat/CentOS](#RedHat/CentOS)  
+   - [Ubuntu/Debian](#Ubuntu)  
+   - [RedHat/CentOS](#RedHat)  
    - [macOS](#macOS)  
    - [Windows](#windows)  
 6. [Example JSON Data](#Example-JSON-Data)  
@@ -73,21 +73,21 @@ jq --version
 
 If this command returns a version (e.g., `jq-1.6`), you already have it installed.
 
-### Ubuntu/Debian
+### Ubuntu
 
 ```bash
 sudo apt update
 sudo apt install jq -y
 ```
 
-### RedHat/CentOS
+### RedHat
 
 ```bash
 sudo yum install epel-release -y
 sudo yum install jq -y
 ```
 
-### macOS (using Homebrew)
+### macOS
 
 ```bash
 brew install jq
