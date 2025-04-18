@@ -70,6 +70,7 @@ Before installing, check if `jq` is already present:
 ```bash
 jq --version
 ```
+![image](https://github.com/user-attachments/assets/ba0e1885-a62b-4aac-8292-5bec740402c5)
 
 If this command returns a version (e.g., `jq-1.6`), you already have it installed.
 
@@ -79,6 +80,10 @@ If this command returns a version (e.g., `jq-1.6`), you already have it installe
 sudo apt update
 sudo apt install jq -y
 ```
+![image](https://github.com/user-attachments/assets/a03f59b7-09cb-4c40-9a96-d897e00845cb)
+
+
+![image](https://github.com/user-attachments/assets/2cfce514-70b5-426e-8a2f-8951b4a88035)
 
 ### RedHat
 
@@ -121,6 +126,7 @@ Save the following content in a file called `data.json` for practice:
   ]
 }
 ```
+![image](https://github.com/user-attachments/assets/6ce30a9a-3f01-4313-aed0-eb9425f2e46a)
 
 ---
 
@@ -131,12 +137,14 @@ Save the following content in a file called `data.json` for practice:
 ```bash
 cat data.json | jq '.'
 ```
+![image](https://github.com/user-attachments/assets/559b24f4-8ff8-4580-b58f-d5193974c0cd)
 
 ### Filter a Field
 
 ```bash
 jq '.user.name' data.json
 ```
+![image](https://github.com/user-attachments/assets/9b28d42b-3a56-4f42-8177-facc26df5ec3)
 
 ---
 
@@ -147,12 +155,15 @@ jq '.user.name' data.json
 ```bash
 jq '.user.address.city' data.json
 ```
+![image](https://github.com/user-attachments/assets/38aa411d-b038-480c-9c99-9693025cfbf5)
 
 ### Loop Over Arrays
 
 ```bash
 jq '.items[] | .name' data.json
 ```
+![image](https://github.com/user-attachments/assets/390601ae-ae3c-4f76-b494-99580d00cabc)
+
 
 ### Search by Index Value
 
@@ -161,12 +172,8 @@ jq '.items[] | .name' data.json
 ```bash
 jq '.user.roles[0]' data.json
 ```
+![image](https://github.com/user-attachments/assets/7b319199-c581-4c54-aee2-014827748901)
 
-#### Output:
-
-```
-"admin"
-```
 
 ---
 ## Contact Information
