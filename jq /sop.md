@@ -28,13 +28,13 @@
 
 ---
 
-## 1. Introduction
+## Introduction
 
 This documentation outlines the core concepts and practical value of the jq command-line tool, highlighting why it was created, what it offers, and how its features align with modern data processing and automation requirements in software development.
 
 ---
 
-## 2. Prerequisites
+## Prerequisites
 
 - Basic understanding of JSON format  
 - Terminal or Command Line Interface access  
@@ -42,7 +42,7 @@ This documentation outlines the core concepts and practical value of the jq comm
 
 ---
 
-## 3. Basic Concepts of jq
+## Basic Concepts of jq
 
 - `jq` parses JSON and applies filters to transform or extract information.
 - It is designed to work like `sed` or `awk` but for JSON files.
@@ -50,7 +50,7 @@ This documentation outlines the core concepts and practical value of the jq comm
 
 ---
 
-## 4. jq Filters Overview
+## jq Filters Overview
 
 | Filter Example | Description                        |
 |----------------|------------------------------------|
@@ -61,9 +61,9 @@ This documentation outlines the core concepts and practical value of the jq comm
 
 ---
 
-## 5. Installation Guide
+## Installation Guide
 
-### 5.1 Check for Existing Installation
+### Check for Existing Installation
 
 Before installing, check if `jq` is already present:
 
@@ -73,34 +73,34 @@ jq --version
 
 If this command returns a version (e.g., `jq-1.6`), you already have it installed.
 
-### 5.2 Ubuntu/Debian
+### Ubuntu/Debian
 
 ```bash
 sudo apt update
 sudo apt install jq -y
 ```
 
-### 5.3 RedHat/CentOS
+### RedHat/CentOS
 
 ```bash
 sudo yum install epel-release -y
 sudo yum install jq -y
 ```
 
-### 5.4 macOS (using Homebrew)
+### macOS (using Homebrew)
 
 ```bash
 brew install jq
 ```
 
-### 5.5 Windows
+### Windows
 
 - Download the `.exe` file from the [official GitHub releases](https://github.com/stedolan/jq/releases)
 - Add the directory containing the `.exe` to your system’s `PATH` environment variable
 
 ---
 
-## 6. Example JSON Data
+## Example JSON Data
 
 Save the following content in a file called `data.json` for practice:
 
@@ -124,7 +124,7 @@ Save the following content in a file called `data.json` for practice:
 
 ---
 
-## 7. Basic Usage
+## Basic Usage
 
 ### View Entire JSON
 
@@ -140,7 +140,7 @@ jq '.user.name' data.json
 
 ---
 
-## 8. Advanced Queries
+## Advanced Queries
 
 ### Access Nested Values
 
