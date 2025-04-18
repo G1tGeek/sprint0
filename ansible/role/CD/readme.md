@@ -1,7 +1,7 @@
 
 # **Ansible Role Continuous Delivery (CD) Workflow**
 
-![Ansible CD](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ALqmemof0Xvnk77tm5zVQA.png)
+![Ansible CD](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_O1FjIawwNmP3cWpwCjJWTjBTMtuVNxAZqVa43wSbiItXY9-fb_jgZwlV0Wr_E47qw&usqp=CAU)
 
 ---
 
@@ -41,6 +41,9 @@ Continuous Delivery (CD) is a software development approach where code changes a
 ---
 
 ## **Workflow of Ansible Role CD**
+
+![image](https://github.com/user-attachments/assets/fcdb067e-6714-4cb6-92b4-fe6ac93c011f)
+
 
 | **Step**             | **Description**                                                                                 |
 |----------------------|-------------------------------------------------------------------------------------------------|
