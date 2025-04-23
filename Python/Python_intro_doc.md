@@ -3,10 +3,10 @@
 ![image](https://outshinelabs.com/wp-content/uploads/2023/03/python_language_outshinelabs.png)
 
 ## **Author**
-| Created     | Version | Author        | Comment | Reviewer         |
-|-------------|---------|---------------|---------|------------------|
-| 14-04-2025  | V1      | Yuvraj Singh  |    Internal Review     | Siddharth Pawar  |
-| 17-04-2025  | V1.1     | Yuvraj Singh  |    Internal Review     | Siddharth Pawar  |
+| Created     | Version | Author        | Modifed | Comment           | Reviewer         |
+|-------------|---------|---------------|-------|------------|------------------|
+| 14-04-2025  | V1.1      | Yuvraj Singh | 17-04-2025 | Internal Review   | Siddharth Pawar  |
+| 17-04-2025  | V2     | Yuvraj Singh  |  |   L0 Review     | Naveen Haswani  |
 
 ---
 
