@@ -1,16 +1,54 @@
 # Golang Introduction Documentation
-![image](https://ddev.com/img/blog/2024/05/golang-nerd-banner.png)
+![image](https://cdn.dribbble.com/userupload/2624050/file/original-59266f4dea1c2aa43f2064cc0f3b165a.png?format=webp&resize=400x300&vertical=center)
 
 ---
 
 ## **Author**
-| Created     | Version | Author        | Comment | Reviewer         |
-|-------------|---------|---------------|---------|------------------|
-| 17-04-2025  | V1      | Yuvraj Singh  |    Internal Review     | Siddharth Pawar  |
+| Created     | Version | Author        | Modifed | Comment           | Reviewer         |
+|-------------|---------|---------------|-------|------------|------------------|
+| 17-04-2025  | V1     | Yuvraj Singh |  | Internal Review   | Siddharth Pawar  |
+| 17-04-2025  | V2     | Yuvraj Singh  |  |   L0 Review     | Naveen Haswani  |
 
 ---
 
-## Metadata
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Why Go?](#why-go)
+3. [What is Go?](#what-is-go)
+4. [Primary Use Cases](#primary-use-cases)
+5. [Key Features](#key-features)
+6. [Conclusion](#conclusion)
+7. [Contacts](#contacts)
+8. [References](#references)
+
+
+---
+
+## Introduction
+This documentation outlines the core concepts and practical value of the Go programming language (Golang), highlighting why it was created, what it offers, and how its features align with modern software development requirements.
+
+---
+
+## Why Go?
+
+Go was created to address common problems faced in software development, especially at scale. Some reasons for its creation and widespread adoption:
+
+> - **Simplicity:** Easy to learn, read, and write.
+> - **Performance:** Compiles to machine code, offering near-C performance.
+> - **Concurrency:** First-class support for concurrent programming with Goroutines.
+> - **Compilation Speed:** Very fast build times, aiding rapid development.
+> - **Scalability:** Ideal for large codebases, microservices, and cloud-native applications.
+> - **Cross-Platform:** Compile once, run anywhere (Linux, Windows, macOS, etc.).
+> - **Open Source:** Backed by Google and a vibrant open-source community.
+
+---
+
+## What is Go?
+
+> Go (or Golang) is a statically typed, compiled programming language designed for efficiency, simplicity, and reliability. It supports procedural as well as concurrent programming paradigms.
+
+**Metadata**
 
 | Field          | Detail                         |
 |----------------|--------------------------------|
@@ -21,36 +59,9 @@
 | Current Version| `go version` (Check in terminal) |
 | Website        | [https://golang.org](https://golang.org) |
 
-## Table of Contents
-1. [Why Go?](#why-go)
-2. [What is Go?](#what-is-go)
-3. [Key Features](#key-features)
-4. [Conclusion](#conclusion)
-5. [Contacts](#contacts)
-6. [References](#references)
-
-
 ---
 
-## Why Go?
-
-Go was created to address common problems faced in software development, especially at scale. Some reasons for its creation and widespread adoption:
-
-> - Simplicity: Easy to learn, read, and write.
-> - Performance: Compiles to machine code, offering near-C performance.
-> - Concurrency: First-class support for concurrent programming with Goroutines.
-> - Compilation Speed: Very fast build times, aiding rapid development.
-> - Scalability: Ideal for large codebases, microservices, and cloud-native applications.
-> - Cross-Platform: Compile once, run anywhere (Linux, Windows, macOS, etc.).
-> - Open Source: Backed by Google and a vibrant open-source community.
-
----
-
-## What is Go?
-
-> Go (or Golang) is a statically typed, compiled programming language designed for efficiency, simplicity, and reliability. It supports procedural as well as concurrent programming paradigms.
-
-**Primary Use Cases:**
+## Primary Use Cases
 
 | Domain             | Description                                       |
 |--------------------|---------------------------------------------------|
