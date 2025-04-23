@@ -3,34 +3,53 @@
 ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4SlpZ3rtWRgb4FBiqiyWroygQEOw_jfVSsQ&s)  
 ---
 ### Author
-| Created     | Version | Author        | Comment | Reviewer         |
-|-------------|---------|---------------|---------|------------------|
-| 17-04-2025  | V1      | Yuvraj Singh  |    Internal Review     | Siddharth Pawar  |
+| Created     | Version | Author        | Modifed | Comment           | Reviewer         |
+|-------------|---------|---------------|-------|------------|------------------|
+| 17-04-2025  | V1.1      | Yuvraj Singh | 18-04-2025 | Internal Review   | Siddharth Pawar  |
+| 18-04-2025  | V2     | Yuvraj Singh  |  |   L0 Review     | Naveen Haswani  |
 
 ---
 
 ### Table of Contents
 1. [Introduction](#introduction)
-2. [Prerequisites](#Prerequisites)  
-3. [Basic Concepts of jq](#Basic-Concepts-of-jq)  
-4. [jq Filters Overview](#jq-Filters-Overview)  
-5. [Installation Guide](#Installation-Guide)  
-   - [Check for Existing Installation](#Check-for-Existing-Installation)  
-   - [Ubuntu](#Ubuntu)  
-   - [RedHat](#RedHat)  
-   - [macOS](#macOS)  
+2. [Why Use `jq`?](#why-use-jq)
+3. [Features](#features)
+4. [Prerequisites](#prerequisites)  
+5. [Basic Concepts of jq](#basic-concepts-of-jq)  
+6. [jq Filters Overview](#jq-filters-overview)  
+7. [Installation Guide](#installation-guide)  
+   - [Check for Existing Installation](#check-for-existing-installation)  
+   - [Ubuntu](#ubuntu)  
+   - [RedHat](#redhat)  
+   - [macOS](#macos)  
    - [Windows](#windows)  
-6. [Example JSON Data](#Example-JSON-Data)  
-7. [Basic Usage](#Basic-Usage)  
-8. [Advanced Queries](#Advanced-Queries)   
-9. [Contact Information](#Contact-Information)  
-10. [References](#References)  
+8. [Example JSON Data](#example-json-data)  
+9. [Basic Usage](#basic-usage)  
+10. [Advanced Queries](#advanced-queries)
+11. [Conclusion](#conclusion)  
+12. [Contact Information](#contact-information)  
+13. [References](#references)  
 
 ---
 
 ## Introduction
 
 This documentation outlines the core concepts and practical value of the jq command-line tool, highlighting why it was created, what it offers, and how its features align with modern data processing and automation requirements in software development.
+
+---
+
+## Why Use `jq`?
+
+In modern development and operations workflows, JSON has become the de facto data interchange format—used across APIs, configuration files, logging systems, and CI/CD pipelines. However, working with raw JSON data through traditional shell utilities like `grep`, `awk`, or `sed` often results in complex, error-prone scripts.
+
+## Features
+
+This is where `jq` becomes indispensable:
+
+> - **Purpose-Built for JSON**: Unlike generic text processors, `jq` understands JSON structure and offers precise control over data extraction, transformation, and formatting.
+> - **Efficient & Lightweight**: It is a fast, command-line-based tool that can be used in pipelines, cron jobs, and automation scripts without requiring additional dependencies.
+> - **Powerful Query Language**: With features like filtering, mapping, nesting, conditionals, and arithmetic operations, `jq` simplifies complex JSON manipulations.
+> - **Ideal for Automation**: Its ability to work seamlessly in scripts makes it a favorite in DevOps, SRE, and backend development environments.
 
 ---
 
@@ -75,9 +94,9 @@ jq --version
 If this command returns a version (e.g., `jq-1.6`), you already have it installed.
 
 ### Ubuntu
-
+> Update your system 
+> - [Ubuntu Basic System Commands](https://github.com/snaatak-Downtime-Crew/Documentation/blob/durgesh_scrums_3/common_stack/operating_system/ubuntu/sop/commoncommands/README.md#1-basic-system-commands)
 ```bash
-sudo apt update
 sudo apt install jq -y
 ```
 ![image](https://github.com/user-attachments/assets/a03f59b7-09cb-4c40-9a96-d897e00845cb)
@@ -174,6 +193,11 @@ jq '.user.roles[0]' data.json
 ```
 ![image](https://github.com/user-attachments/assets/7b319199-c581-4c54-aee2-014827748901)
 
+
+---
+## Conclusion 
+
+`jq` bridges the gap between human-readable JSON and machine-level automation needs—allowing for cleaner, scalable, and more maintainable workflows.
 
 ---
 ## Contact Information
