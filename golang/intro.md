@@ -8,14 +8,16 @@
 |-------------|---------|---------------|-------|------------|------------------|
 | 17-04-2025  | V1     | Yuvraj Singh |  | Internal Review   | Siddharth Pawar  |
 | 17-04-2025  | V2     | Yuvraj Singh  |  |   L0 Review     | Naveen Haswani  |
+| 23-04-2025  | V3     | Yuvraj Singh  |  |   L1 Review     | Deepak Nishad |
+| 23-04-2025  | V4.1     | Yuvraj Singh  | 03-05-2025 |   L2 Review     | Naveen Verma |
 
 ---
 
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Why Go?](#why-go)
-3. [What is Go?](#what-is-go)
+2. [What is Go?](#what-is-go)
+3. [Why Go?](#why-go)
 4. [Primary Use Cases](#primary-use-cases)
 5. [Key Features](#key-features)
 6. [Conclusion](#conclusion)
@@ -30,23 +32,13 @@ This documentation outlines the core concepts and practical value of the Go prog
 
 ---
 
-## Why Go?
-
-Go was created to address common problems faced in software development, especially at scale. Some reasons for its creation and widespread adoption:
-
-> - **Simplicity:** Easy to learn, read, and write.
-> - **Performance:** Compiles to machine code, offering near-C performance.
-> - **Concurrency:** First-class support for concurrent programming with Goroutines.
-> - **Compilation Speed:** Very fast build times, aiding rapid development.
-> - **Scalability:** Ideal for large codebases, microservices, and cloud-native applications.
-> - **Cross-Platform:** Compile once, run anywhere (Linux, Windows, macOS, etc.).
-> - **Open Source:** Backed by Google and a vibrant open-source community.
-
----
-
 ## What is Go?
 
-> Go (or Golang) is a statically typed, compiled programming language designed for efficiency, simplicity, and reliability. It supports procedural as well as concurrent programming paradigms.
+> Go (or Golang) is a statically typed, compiled programming language developed at Google. It emphasizes simplicity, performance, and reliability, making it ideal for building scalable and maintainable systems.
+
+Go is known for:
+- Compiling to fast native binaries
+- First-class support for concurrency with Goroutines
 
 **Metadata**
 
@@ -58,6 +50,24 @@ Go was created to address common problems faced in software development, especia
 | First Released | March 2012                     |
 | Current Version| `go version` (Check in terminal) |
 | Website        | [https://golang.org](https://golang.org) |
+
+---
+
+## Why Go?
+
+Go was created to address several long-standing problems in software development, especially in large-scale and cloud-native environments:
+
+> - **Overcomplicated Toolchains:** Developers struggled with complex build systems and slow compilation in C/C++.
+> - **Poor Concurrency Models:** Traditional languages offered limited or error-prone concurrency handling.
+> - **Long Build Times:** Delayed feedback cycles and slower release velocities.
+> - **Cross-Platform Pain:** Difficulty in producing and managing binaries across multiple OS/architectures.
+> - **Verbose Code and Maintenance Overhead:** Lack of simplicity often led to bloated, hard-to-maintain codebases.
+
+Go solves these issues through:
+- Fast compilation and deployment
+- Simple syntax and tooling
+- Excellent concurrency primitives
+- Built-in cross-compilation and robust standard libraries
 
 ---
 
