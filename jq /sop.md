@@ -1,82 +1,52 @@
+
 # Standard Operating Procedure (SOP)  
 ## JQ – JSON Query Processor
 ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4SlpZ3rtWRgb4FBiqiyWroygQEOw_jfVSsQ&s)  
 ---
+
 ### Author
+
 | Created     | Version | Author        | Modifed | Comment           | Reviewer         |
 |-------------|---------|---------------|-------|------------|------------------|
 | 17-04-2025  | V1.1      | Yuvraj Singh | 18-04-2025 | Internal Review   | Siddharth Pawar  |
-| 18-04-2025  | V2     | Yuvraj Singh  |  |   L0 Review     | Naveen Haswani  |
+| 18-04-2025  | V2.1     | Yuvraj Singh  | 23-04-2025 |   L0 Review     | Naveen Haswani  |
+| 23-04-2025  | V3     | Yuvraj Singh  |  |   L1 Review     | Deepak Nishad |
+| 27-04-2025  | V4.1     | Yuvraj Singh  | 03-05-2025 |   L2 Review     | Naveen Verma |
 
 ---
 
 ### Table of Contents
-1. [Introduction](#introduction)
-2. [Why Use `jq`?](#why-use-jq)
-3. [Features](#features)
-4. [Prerequisites](#prerequisites)  
-5. [Basic Concepts of jq](#basic-concepts-of-jq)  
-6. [jq Filters Overview](#jq-filters-overview)  
-7. [Installation Guide](#installation-guide)  
+
+1. [Prerequisites](#prerequisites)    
+2. [Installation Guide](#installation-guide)  
    - [Check for Existing Installation](#check-for-existing-installation)  
    - [Ubuntu](#ubuntu)  
    - [RedHat](#redhat)  
    - [macOS](#macos)  
    - [Windows](#windows)  
-8. [Example JSON Data](#example-json-data)  
-9. [Basic Usage](#basic-usage)  
-10. [Advanced Queries](#advanced-queries)
-11. [Conclusion](#conclusion)  
-12. [Contact Information](#contact-information)  
-13. [References](#references)  
+3. [Example JSON Data](#example-json-data)  
+4. [Basic Usage](#basic-usage)  
+5. [Advanced Queries](#advanced-queries)
+6. [Use Cases](#use-cases)
+7. [Known Errors in jq Usage](#known-errors-in-jq-usage)
+8. [Conclusion](#conclusion)  
+9. [Contact Information](#contact-information)  
+10. [References](#references)  
 
 ---
 
 ## Introduction
 
-This documentation outlines the core concepts and practical value of the jq command-line tool, highlighting why it was created, what it offers, and how its features align with modern data processing and automation requirements in software development.
+This documentation outlines practical value of the jq command-line tool, highlighting why it was created, what it offers, and how its features align with modern data processing and automation requirements in software development.
 
 ---
 
-## Why Use `jq`?
-
-In modern development and operations workflows, JSON has become the de facto data interchange format—used across APIs, configuration files, logging systems, and CI/CD pipelines. However, working with raw JSON data through traditional shell utilities like `grep`, `awk`, or `sed` often results in complex, error-prone scripts.
-
-## Features
-
-This is where `jq` becomes indispensable:
-
-> - **Purpose-Built for JSON**: Unlike generic text processors, `jq` understands JSON structure and offers precise control over data extraction, transformation, and formatting.
-> - **Efficient & Lightweight**: It is a fast, command-line-based tool that can be used in pipelines, cron jobs, and automation scripts without requiring additional dependencies.
-> - **Powerful Query Language**: With features like filtering, mapping, nesting, conditionals, and arithmetic operations, `jq` simplifies complex JSON manipulations.
-> - **Ideal for Automation**: Its ability to work seamlessly in scripts makes it a favorite in DevOps, SRE, and backend development environments.
-
----
 
 ## Prerequisites
 
 - Basic understanding of JSON format  
 - Terminal or Command Line Interface access  
 - Internet access for installation (if not already installed)
-
----
-
-## Basic Concepts of jq
-
-- `jq` parses JSON and applies filters to transform or extract information.
-- It is designed to work like `sed` or `awk` but for JSON files.
-- Filters are written using a concise query language.
-
----
-
-## jq Filters Overview
-
-| Filter Example | Description                        |
-|----------------|------------------------------------|
-| `.`            | Identity filter (returns input)    |
-| `.key`         | Access a specific key in the JSON  |
-| `.[index]`     | Access array item by index         |
-| `|`            | Pipe result to next filter         |
 
 ---
 
@@ -155,6 +125,8 @@ Save the following content in a file called `data.json` for practice:
 
 ```bash
 cat data.json | jq '.'
+
+# Prints the entire contents of the JSON file in a human-readable and color-formatted layout.
 ```
 ![image](https://github.com/user-attachments/assets/559b24f4-8ff8-4580-b58f-d5193974c0cd)
 
@@ -162,6 +134,8 @@ cat data.json | jq '.'
 
 ```bash
 jq '.user.name' data.json
+
+# Extracts and displays the value of the name field nested inside the user object.
 ```
 ![image](https://github.com/user-attachments/assets/9b28d42b-3a56-4f42-8177-facc26df5ec3)
 
@@ -173,6 +147,8 @@ jq '.user.name' data.json
 
 ```bash
 jq '.user.address.city' data.json
+
+# Accesses the nested city field inside address, which is itself a key inside the user object.
 ```
 ![image](https://github.com/user-attachments/assets/38aa411d-b038-480c-9c99-9693025cfbf5)
 
@@ -180,6 +156,8 @@ jq '.user.address.city' data.json
 
 ```bash
 jq '.items[] | .name' data.json
+
+# Iterates over each object in the items array and returns the value of the name key for each item.
 ```
 ![image](https://github.com/user-attachments/assets/390601ae-ae3c-4f76-b494-99580d00cabc)
 
@@ -190,11 +168,101 @@ jq '.items[] | .name' data.json
 
 ```bash
 jq '.user.roles[0]' data.json
+
+# Retrieves the first element (index 0) from the roles array within the user object.
 ```
 ![image](https://github.com/user-attachments/assets/7b319199-c581-4c54-aee2-014827748901)
 
 
 ---
+
+## Use cases
+| Scenario | How jq Helps |
+|----------|---------------|
+| Log Analysis in DevOps Pipelines | Quickly extract and format key data from JSON-formatted logs or API responses for monitoring tools. |
+| REST API Response Parsing | Process JSON outputs from curl or other HTTP clients to extract relevant fields programmatically. |
+| CI/CD Workflow Automation | Use in scripts to parse build metadata, environment variables, or deployment status in JSON format. |
+| Configuration File Manipulation | Read or validate JSON-based config files used by tools like Docker Compose, Terraform, or Kubernetes. |
+| Database Migration or Sync Scripts | Parse and transform JSON data exported from NoSQL databases like MongoDB for further automation. |
+| Security Auditing | Filter large JSON outputs from security tools (e.g., AWS Inspector, audit logs) to extract vulnerabilities. |
+| Cloud Resource Management | Process JSON responses from AWS CLI, Azure CLI, or GCP CLI to summarize or report resource states.|
+| Data Transformation in ETL Pipelines | Clean, reshape, or enrich incoming JSON data as part of Extract-Transform-Load workflows. |
+| Debugging Microservices | Decode structured log files or API payloads from microservices communicating in JSON. |
+| Infrastructure as Code (IaC) Audits | Validate and inspect JSON-based state files from Terraform or CloudFormation. |
+
+---
+
+## Known Errors in jq Usage
+
+This section outlines common issues users may encounter when using `jq` and how to resolve them.
+
+---
+
+### 1. File Not Found
+
+```bash
+jq '.' data.json
+
+jq: error: Could not open file data.json: No such file or directory
+```
+
+**Cause:** File `data.json` doesn't exist in the current directory. 
+**Fix:** Ensure the file is present and the path is correct.
+
+---
+
+### 2. Invalid JSON Format
+
+```
+cat broken.json | jq '.'
+
+parse error: Unfinished JSON...
+```
+
+**Cause:** The JSON file is not properly formatted (e.g., missing commas, brackets, quotes).  
+**Fix:** Validate the JSON using a linter or online JSON validator before using `jq`.
+
+---
+
+### 3. Null Output
+
+```
+jq '.user.phone' data.json
+
+null
+```
+
+**Cause:** The queried field does not exist in the JSON.  
+**Fix:** Double-check the field name and structure. Use `jq 'keys'` or `jq '.'` to inspect structure first.
+
+---
+
+### 4. Index Out of Range
+
+```
+jq '.user.roles[5]' data.json
+
+null
+```
+
+**Cause:** You're accessing an index that doesn’t exist in the array.  
+**Fix:** Use `jq '.user.roles | length'` to verify array size before indexing.
+
+---
+
+### 5. Permission Denied 
+
+```
+jq '.' /root/data.json
+
+jq: error: Could not open file /root/data.json: Permission denied
+```
+
+**Cause:** File is not readable by the current user.  
+**Fix:** Run with elevated permissions (e.g., `sudo`) or change file permissions.
+
+---
+
 ## Conclusion 
 
 `jq` bridges the gap between human-readable JSON and machine-level automation needs—allowing for cleaner, scalable, and more maintainable workflows.
