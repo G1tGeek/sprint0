@@ -1,13 +1,18 @@
 
-# **Ansible Role Continuous Delivery (CD) Workflow**
+# **Continuous Delivery (CD) Workflow for Ansible Roles**
 
 ![Ansible CD](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_O1FjIawwNmP3cWpwCjJWTjBTMtuVNxAZqVa43wSbiItXY9-fb_jgZwlV0Wr_E47qw&usqp=CAU)
 
 ---
 
-| Created     | Version | Author        | Comment           | Reviewer         |
-|-------------|---------|---------------|-------------------|------------------|
-| 16-04-2025  | V1      | Yuvraj Singh  | Internal Review   | Siddharth Pawar  |
+## Author
+
+| Created     | Version | Author        | Modified    | Comment         | Reviewer         |
+|-------------|---------|---------------|-------------|------------------|------------------|
+| 16-04-2025  | V1      | Yuvraj Singh  |             | Internal Review  | Siddharth Pawar  |
+| 17-04-2025  | V2.1    | Yuvraj Singh  | 23-04-2025  | L0 Review        | Naveen Haswani   |
+| 23-04-2025  | V3      | Yuvraj Singh  |             | L1 Review        | Deepak Nishad    |
+| 27-04-2025  | V4.1    | Yuvraj Singh  | 05-05-2025  | L2 Review        | Naveen Verma     |
 
 ---
 
@@ -15,8 +20,8 @@
 
 1. [Introduction](#introduction)  
 2. [What is Continuous Delivery in Ansible Roles?](#what-is-continuous-delivery-in-ansible-roles)  
-3. [Workflow of Ansible Role CD](#workflow-of-ansible-role-cd)  
-4. [CI/CD Tooling for Ansible Roles](#cicd-tooling-for-ansible-roles)  
+3. [CD Workflow for Ansible Roles](#cd-workflow-for-ansible-roles)  
+4. [CD Tools for Ansible Roles](#cd-tools-for-ansible-roles)  
 5. [Best Practices](#best-practices)  
 6. [Conclusion](#conclusion)  
 7. [Contacts](#contacts)  
@@ -26,67 +31,64 @@
 
 ## **Introduction**
 
-This documentation outlines the Continuous Delivery (CD) workflow of Ansible roles, explaining how automation, testing, and delivery practices ensure consistent deployment of infrastructure code across environments.
+This document outlines the **Continuous Delivery (CD)** workflow for **Ansible roles**, detailing how tested and verified role updates can be automatically delivered to staging or production systems with minimal manual intervention. CD helps maintain infrastructure consistency and reliability through frequent, automated deployments.
 
 ---
 
 ## **What is Continuous Delivery in Ansible Roles?**
 
-Continuous Delivery (CD) is a software development approach where code changes are automatically prepared for production release. For **Ansible roles**, CD ensures:
+Continuous Delivery (CD) is the practice of automatically delivering validated infrastructure code—such as Ansible roles—to environments like staging or production. In the context of Ansible roles, CD ensures:
 
-- Every update to a role is tested.
-- Validated roles are versioned and published to repositories like Ansible Galaxy or internal artifact registries.
-- Infrastructure code is consistently deployed with minimal manual intervention.
-
----
-
-## **Workflow of Ansible Role CD**
-
-![image](https://github.com/user-attachments/assets/fcdb067e-6714-4cb6-92b4-fe6ac93c011f)
-
-
-| **Step**             | **Description**                                                                                 |
-|----------------------|-------------------------------------------------------------------------------------------------|
-| **1. Role Creation**  | Develop modular and reusable Ansible roles with `tasks`, `handlers`, `vars`, `defaults`, etc.  |
-| **2. Version Control**| Push the role to a Git repository (GitHub, GitLab, Bitbucket).                                 |
-| **3. CI Trigger**     | A push/merge triggers the pipeline via webhook or scheduled run.                               |
-| **4. Linting & Syntax Check** | Tools like `ansible-lint` or `yamllint` check for best practices and syntax errors.   |
-| **5. Unit Testing**   | Test using `molecule`, often with Docker or Vagrant to simulate environments.                  |
-| **6. Integration Test**| Verify interaction with other roles or playbooks.                                              |
-| **7. Role Versioning**| Update `meta/main.yml` and tag the release (`v1.0.0`).                                         |
-| **8. Publishing**     | Automatically publish to Ansible Galaxy or internal registries.                                |
-| **9. Deployment**     | Trigger playbooks using updated role versions on staging/production via tools like AWX/Tower.  |
+- Roles are automatically deployed after successful validation.
+- Delivery pipelines push new versions of roles to designated environments.
+- Minimal manual steps are required between development and production use.
 
 ---
 
-## **CI/CD Tooling for Ansible Roles**
+## **CD Workflow for Ansible Roles**
 
-| **Tool**         | **Purpose**                                        |
-|------------------|----------------------------------------------------|
-| **GitHub Actions** | Automate testing, linting, and publishing tasks. |
-| **GitLab CI/CD**  | Integrated pipelines with extensive customization.|
-| **Jenkins**       | Widely used for flexible CI/CD pipelines.         |
-| **Molecule**      | Framework for testing Ansible roles.              |
-| **Docker**        | Containerized test environments.                  |
-| **Ansible Galaxy**| Role sharing and version control platform.        |
+![image](https://github.com/user-attachments/assets/a244a322-020e-4399-9436-9fa89272a9cb)
+
+| **Step**                 | **Description**                                                                                  |
+|--------------------------|--------------------------------------------------------------------------------------------------|
+| **1. Role Finalization** | Finalized, tested role including all necessary components (`tasks/`, `handlers/`, etc.).         |
+| **2. Version Tagging**   | The role version is updated in `meta/main.yml` and a Git tag is created (e.g., `v1.2.0`).        |
+| **3. Artifact Preparation** | The role is packaged if required for internal registries or external sharing.            |
+| **4. Publishing**        | Role is uploaded to Ansible Galaxy or internal repositories.                                     |
+| **5. Staging Delivery**  | Automation triggers deployment in a staging environment using the updated role.                  |
+| **6. Validation in Staging** | Sanity or smoke tests validate the role’s impact in a near-prod environment.              |
+| **7. Production Deployment** | Approved changes are automatically deployed to production environments.                |
+| **8. Monitoring & Rollback** | Post-deployment monitoring and rollback options are maintained if issues arise.           |
+
+---
+
+## **CD Tools for Ansible Roles**
+
+| **Tool**                | **Purpose in CD Workflow**                                      |
+|-------------------------|------------------------------------------------------------------|
+| **Ansible Tower / AWX** | Automate execution of playbooks using the latest role versions. |
+| **Ansible Galaxy / Private Repo** | Host and version Ansible roles for delivery.           |
+| **Git Tagging**         | Identify and mark specific role versions for release.           |
+| **Webhook Triggers**    | Automate staging or production deployment when roles are updated.|
+| **Approval Gates**      | Integrate manual or automated checks between staging and production. |
+| **Monitoring Tools**    | Track role deployment health (e.g., Prometheus, ELK).            |
 
 ---
 
 ## **Best Practices**
 
-- Modularize roles with clear responsibility.
-- Maintain `README.md` and proper role metadata.
-- Use idempotent tasks and avoid hardcoding.
-- Automate testing with Molecule for all OS targets.
-- Secure sensitive data using Ansible Vault.
-- Maintain consistent tagging and changelog updates.
-- Integrate secrets management (e.g., HashiCorp Vault, AWS Secrets Manager).
+- **Semantic Versioning**: Use semantic version tags (`v1.0.0`) for all production-ready role releases.
+- **Immutable Roles**: Avoid editing previously published versions; treat roles as immutable artifacts.
+- **Separate CD from CI**: Ensure CD processes trigger only after validation, not during development.
+- **Approval Workflows**: Introduce gates between environments to prevent unintended production changes.
+- **Rollback Strategy**: Maintain the ability to revert to a previously known good role version.
+- **Environment Consistency**: Ensure staging and production mimic each other closely for realistic validation.
 
 ---
 
 ## **Conclusion**
 
-Implementing Continuous Delivery for Ansible roles ensures that infrastructure code is always in a deployable state. Automating tests, linting, and publishing minimizes errors and accelerates delivery across environments. This workflow aligns with modern DevOps practices, promoting scalable, secure, and maintainable infrastructure.
+Implementing **Continuous Delivery** for Ansible roles streamlines infrastructure changes and enhances system reliability. By automating role delivery and reducing human intervention, teams achieve faster, safer deployments and maintain consistent environments aligned with modern DevOps principles.
 
 ---
 
@@ -103,6 +105,6 @@ Implementing Continuous Delivery for Ansible roles ensures that infrastructure c
 | **Title**                        | **Link**                                                                                      |
 |----------------------------------|-----------------------------------------------------------------------------------------------|
 | Ansible Galaxy Docs              | [Visit](https://galaxy.ansible.com/docs/)                                                    |
-| Molecule for Ansible Testing     | [Visit](https://www.jeffgeerling.com/blog/2018/testing-your-ansible-roles-molecule)                                          |
-| Ansible Lint                     | [Visit](https://ansible-lint.readthedocs.io/en/latest/)                                      |
-| GitHub Actions for Ansible       | [Visit](https://spacelift.io/blog/github-actions-ansible)                                                  |
+| Best Practices for CD in Infra   | [Visit](https://martinfowler.com/bliki/ContinuousDelivery.html)                              |
+| Managing Role Versions           | [Visit](https://docs.ansible.com/ansible/latest/dev_guide/collections_galaxy_meta.html)      |
+| Ansible Tower Documentation      | [Visit](https://docs.ansible.com/ansible-tower/latest/html/userguide/index.html)             |
