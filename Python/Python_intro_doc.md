@@ -1,4 +1,5 @@
 
+
 # Introduction to Python
 ![image](https://outshinelabs.com/wp-content/uploads/2023/03/python_language_outshinelabs.png)
 
@@ -6,7 +7,9 @@
 | Created     | Version | Author        | Modifed | Comment           | Reviewer         |
 |-------------|---------|---------------|-------|------------|------------------|
 | 14-04-2025  | V1.1      | Yuvraj Singh | 17-04-2025 | Internal Review   | Siddharth Pawar  |
-| 17-04-2025  | V2     | Yuvraj Singh  |  |   L0 Review     | Naveen Haswani  |
+| 17-04-2025  | V2.1     | Yuvraj Singh  | 23-04-2025 |   L0 Review     | Naveen Haswani  |
+| 23-04-2025  | V3     | Yuvraj Singh  |  |   L1 Review     | Deepak Nishad |
+| 27-04-2025  | V4.1    | Yuvraj Singh  | 03-05-2025 |   L2 Review     | Naveen Verma |
 
 ---
 
@@ -16,10 +19,11 @@
 2. [History of Python](#history-of-python)  
 3. [Key Features of Python](#key-features-of-python)  
 4. [Python Architecture](#python-architecture)  
-5. [Common Use Cases of Python](#common-use-cases-of-python)  
-6. [Conclusion](#conclusion)  
-7. [Contacts](#contacts)  
-8. [References](#references)  
+5. [Common Use Cases of Python](#common-use-cases-of-python)
+6. [Limitations of Python](#limitations-of-python)   
+7. [Conclusion](#conclusion)  
+8. [Contact](#contact)  
+9. [References](#references)  
 
 ---
 
@@ -58,7 +62,7 @@ Python is a high-level, interpreted programming language developed with an empha
 
 ## Python Architecture
 
-![image2](https://miro.medium.com/v2/resize:fit:1200/1*1athPfdP9St4mkB_hElM6g.png)
+![image](https://github.com/user-attachments/assets/fae99f7d-680f-4d78-a0b0-f3bfb81f0e6b)
 
 Python's architecture is built around several core components that interact to execute Python programs effectively:
 
@@ -88,14 +92,31 @@ Python's architecture is built around several core components that interact to e
 
 ---
 
-## Conclusion
+## Limitations of Python
 
-Python has become a critical tool across industries due to its simplicity, power, and versatility. Whether you're building a personal automation script or a full-scale AI model, Python offers the tools and ecosystem to make development faster and easier.
+While Python offers numerous advantages, it's important to understand its limitations in certain use cases:
+
+| **Limitation**                 | **Explanation**                                                                                   |
+|-------------------------------|---------------------------------------------------------------------------------------------------|
+| **Slower Execution Speed**     | Python is an interpreted language, so it runs slower than compiled languages like C or Java.      |
+| **High Memory Usage**          | Python’s memory consumption can be significant, which is a concern for mobile or embedded systems.|
+| **Weak in Mobile Development** | Python is not natively supported for mobile app development and lacks robust frameworks for it.   |
+| **Runtime Errors**             | Being dynamically typed, errors often appear during execution rather than at compile-time.       |
+| **Global Interpreter Lock (GIL)** | In CPython, only one thread can execute at a time, limiting multi-threaded performance.     |
+| **Limited Browser Support**    | Python cannot be used for client-side web development (like JavaScript in browsers).              |
+| **Database Access Limitations**| Though possible, database connectivity in Python is not as robust or fast as in languages like Java. |
 
 
 ---
 
-## Contacts
+## Conclusion
+
+Python's simplicity, versatility, and vast ecosystem make it a go-to language for beginners and professionals alike. Whether you're building web applications, analyzing data, or automating tasks, Python provides the tools and community support to get the job done efficiently.
+
+
+---
+
+## Contact
 
 | Name         | Email Address                                 |
 |--------------|-----------------------------------------------|
