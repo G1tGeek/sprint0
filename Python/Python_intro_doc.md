@@ -62,7 +62,7 @@ Python is a high-level, interpreted programming language developed with an empha
 
 ## Python Architecture
 
-![image](https://github.com/user-attachments/assets/fae99f7d-680f-4d78-a0b0-f3bfb81f0e6b)
+![image](https://github.com/user-attachments/assets/b49e4112-f39b-4ecb-996e-4326bf761e62)
 
 Python's architecture is built around several core components that interact to execute Python programs effectively:
 
