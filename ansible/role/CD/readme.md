@@ -47,7 +47,7 @@ Continuous Delivery (CD) is the practice of automatically delivering validated i
 
 ## **CD Workflow for Ansible Roles**
 
-![image](https://github.com/user-attachments/assets/a244a322-020e-4399-9436-9fa89272a9cb)
+![image](https://github.com/user-attachments/assets/da5ab794-86c1-4c06-b5ad-d67eeeb68cbf)
 
 | **Step**                 | **Description**                                                                                  |
 |--------------------------|--------------------------------------------------------------------------------------------------|
